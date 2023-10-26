@@ -131,8 +131,50 @@ footer {
     margin:0;
 }
 
+.left-arm-rellax{
+    position: absolute;
+    display: block;
+    z-index: 500;
+    will-change: transform;
+    scale: 88%;
+    transform: translate3d(0px, -721px, 0px);
+    left: -22px;
+}
+
+.right-arm-rellax{
+    position: absolute;
+    display: block;
+    z-index: 500;
+    will-change: transform;
+    scale: 88%;
+    transform: translate3d(0px, -721px, 0px);
+    right: 350px;
+}
+
+.glass {
+    position: absolute;
+    top: 30px;
+    left: 43px;
+    background: transparent url(/img/glass-float-large.gif) top left no-repeat;
+    width: 218px;
+    height: 408px;
+    transform: rotate(-5deg);
+}
+
+.hand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent url(/img/section-wcd-arm-right-no-glass.png) bottom right no-repeat;
+    width: 410px;
+    height: 562px;
+}
+
 @media (max-width: 960px) {
     h1 {
         font-size: 60px;
+    }
+    .right-arm-rellax, .left-arm-rellax{
+        display: none;
     }
 }
